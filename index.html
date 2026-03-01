@@ -5,6 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3BB FIBRE3 - สมัครเน็ตบ้านคุณภาพ</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-401449734"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'AW-401449734');
+    </script>
+
+    <!-- Event snippet for Conversion (Fired on CTA Click) -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // จับ Event ยิง Conversion เฉพาะตอนที่ลูกค้ากดปุ่ม "สมัคร/โทร" หรือ "แอดไลน์"
+            var ctaButtons = document.querySelectorAll('a[href^="tel:"], a[href^="https://line.me/"]');
+            ctaButtons.forEach(function (button) {
+                button.addEventListener('click', function () {
+                    gtag('event', 'conversion', {
+                        'send_to': 'AW-401449734/zp3fCKnuj4EcEIbGtr8B',
+                        'transaction_id': ''
+                    });
+                });
+            });
+        });
+    </script>
     <meta name="description"
         content="สมัครเน็ตบ้าน 3BB FIBRE3 แรงทะลุพิกัด พร้อมความบันเทิงระดับพรีเมียม โทรเลย 065-716-1239">
     <link rel="preconnect" href="https://fonts.googleapis.com">
